@@ -22,7 +22,7 @@
 
 **Date:** `31/10/25`  
 **In Time:** `10:00 am`  
-**Out Time:** `13:30 pm`  
+**Out Time:** `01:30 pm`  
 **Name:** `Diprati Das`
 
 **Progress Summary:**
