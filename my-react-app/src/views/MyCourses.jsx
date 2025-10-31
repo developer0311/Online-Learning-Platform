@@ -1,27 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import coursesData from "../coursesData";
+
 
 function Courses() {
-  const courses = [
-    {
-      title: "Web Development Bootcamp",
-      text: "Master HTML, CSS, JavaScript, and React to build modern web applications.",
-      img_source: "./images/webdev.jpg",
-      page_source: "/course/webdev",
-    },
-    {
-      title: "Data Science with Python",
-      text: "Learn data analysis, visualization, and machine learning using Python.",
-      img_source: "./images/datascience.jpg",
-      page_source: "/course/datascience",
-    },
-    {
-      title: "UI/UX Design Masterclass",
-      text: "Create user-friendly designs using Figma and core design principles.",
-      img_source: "./images/uiux.jpg",
-      page_source: "/course/uiux",
-    },
-  ];
 
   return (
       <main className="container my-5">
@@ -33,16 +15,16 @@ function Courses() {
           </p>
 
           <div className="row justify-content-center">
-            {courses.map((course, index) => (
+            {coursesData.slice(0, 6).map((course, index) => (
               <div
                 key={index}
                 className="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
               >
                 <Card
                   title={course.title}
-                  text={course.text}
+                  text={course.description}
                   img_source="./images/card_image.png"
-                  page_source={course.page_source}
+                  page_source={course.id}
                 />
               </div>
             ))}

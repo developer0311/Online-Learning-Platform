@@ -2,6 +2,41 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Alternates&family=Sacramento&family=Sanchez&display=swap");
 
+/* COLOR VARIABLES */
+:root {
+  --green-primary: #66bb6a;
+  --green-secondary: #008667;
+  --green-hero: #003828;
+
+  --bg-color: #fffff8;
+  /* --bg-color: linear-gradient(140deg,rgba(255, 255, 255, 1) 0%, rgba(237, 255, 238, 1) 46%, rgba(112, 255, 215, 1) 100%); */
+  --card-bg: #ffffff;
+  --text-color: #ffffe6;
+  --text-secondary: #555555;
+  --border-color: #979797;
+  --card-border-color: #008667;
+
+  --success-color: #388e3c;
+  --error-color: #d32f2f;
+
+  --l-r-bg-color: #008667;
+  --nav-color: #ffffe6;
+  --nav-color-hover: #82ffee;
+
+  --service-card-bg: #d1f2eb;
+  --LABEL_COLOR: #154360;
+  --BTN_COLOR: #048a4b;
+  --BTN_HOVER: #025829;
+  --WARNING_BTN_COLOR: #ffc107;
+  --WARNING_BTN_HOVER: #d49f00;
+  --DANGER_BTN_COLOR: #dc3545;
+  --DANGER_BTN_HOVER: #bb0f20;
+  --INFO_BTN_COLOR: #03b7db;
+  --INFO_BTN_HOVER: #0286a0;
+
+  --footer-bg-color: #212529;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -162,3 +197,6 @@ section {
   50% { transform: rotateY(-180deg); }
   100% { transform: rotateY(-180deg); }
 }
+
+
+/* ------------------ LOADER ------------------ */

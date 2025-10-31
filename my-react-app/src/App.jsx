@@ -6,6 +6,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Home from "./views/Home";
 import Courses from "./views/Courses";
 import MyCourses from "./views/MyCourses";
+import CourseDetails from "./views/CourseDetails"; // ✅ Add this import
 import Profile from "./views/Profile";
 import PageLoader from "./components/PageLoader";
 
@@ -28,6 +29,7 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/my-courses" element={<MyCourses />} />
+        <Route path="/courses/:id" element={<CourseDetails />} /> 
         <Route path="/profile" element={<Profile />} />
       </Routes>
       <Footer />

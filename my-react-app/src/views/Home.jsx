@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import Card from "../components/Card";
+import coursesData from "../coursesData";
 
 function Home() {
-
   return (
     <main className="home">
       <section className="home mb-5">
@@ -27,42 +27,18 @@ function Home() {
 
       <section className="home mb-5 container">
         <h3 className="fw-semibold text-center mb-4">Popular Courses</h3>
-        <div className="row justify-content-center g-4">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <Card
-              title="Web Development"
-              text="Learn HTML, CSS, and JavaScript to start your career as a full-stack developer."
-              page_source="/"
-              img_source="./images/card_image.png"
-            />
-          </div>
-
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <Card
-              title="Data Science"
-              text="Master data analysis, Python, and AI to become a top data scientist."
-              page_source="/"
-              img_source="./images/card_image.png"
-            />
-          </div>
-
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <Card
-              title="UI/UX Design"
-              text="Design stunning interfaces with Figma and Adobe XD from scratch."
-              page_source="/"
-              img_source="./images/card_image.png"
-            />
-          </div>
-
-          <div className="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-            <Card
-              title="Machine Learning"
-              text="Dive deep into ML algorithms and build predictive models using Python."
-              page_source="/"
-              img_source="./images/card_image.png"
-            />
-          </div>
+        <div className="row justify-content-center ">
+          {coursesData.slice(0, 5).map((course) => (
+            <div key={course.id}
+                className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+              <Card
+                title="UI/UX Design"
+                text="Design stunning interfaces with Figma and Adobe XD from scratch."
+                page_source={course.id}
+                img_source="./images/card_image.png"
+              />
+            </div>
+          ))}
         </div>
 
         <div className="text-center mt-5">

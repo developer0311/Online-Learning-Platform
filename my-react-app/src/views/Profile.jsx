@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import coursesData from "../coursesData";
+
+
 
 function Profile() {
   const user = {
@@ -10,26 +13,6 @@ function Profile() {
     avatar: "./images/card_image.png",
   };
 
-  const enrolledCourses = [
-    {
-      title: "React.js for Beginners",
-      text: "Learn the fundamentals of React, components, and hooks.",
-      img_source: "./images/react.jpg",
-      page_source: "/course/react",
-    },
-    {
-      title: "Python Data Analysis",
-      text: "Explore data manipulation and visualization using Python.",
-      img_source: "./images/python.jpg",
-      page_source: "/course/python",
-    },
-    {
-      title: "Machine Learning Basics",
-      text: "Understand ML concepts, algorithms, and model building.",
-      img_source: "./images/ml.jpg",
-      page_source: "/course/ml",
-    },
-  ];
 
   return (
       <main className="container my-5">
@@ -60,16 +43,16 @@ function Profile() {
           </h3>
 
           <div className="row justify-content-center">
-            {enrolledCourses.map((course, index) => (
+            {coursesData.slice(0,3).map((course, index) => (
               <div
-                key={index}
+                key={course.id}
                 className="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
               >
                 <Card
-                  title={course.title}
-                  text={course.text.slice(0, 80) + "..."}
+                  title={course.name}
+                  text={course.description.slice(0, 80) + "..."}
                   img_source="./images/card_image.png"
-                  page_source={course.page_source}
+                  page_source={course.id}
                 />
               </div>
             ))}

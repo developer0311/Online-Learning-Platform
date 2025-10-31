@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Card from "../components/Card";
+import coursesData from "../coursesData";
 
 function Courses() {
   const courses = [
@@ -52,16 +53,17 @@ function Courses() {
           </p>
 
           <div className="row justify-content-center">
-            {courses.map((course, index) => (
+            {coursesData.map((course, index) => (
               <div
-                key={index}
-                className="col-lg-4 col-md-6 mb-4 d-flex justify-content-center"
+                key={course.id}
+                className="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex justify-content-center"
               >
                 <Card
-                  title={course.title}
-                  text={course.text.slice(0, 50) + "..."}
+                
+                  title={course.name}
+                  text={course.description.slice(0, 50) + "..."}
                   img_source="./images/card_image.png"
-                  page_source={course.page_source}
+                  page_source={course.id}
                 />
               </div>
             ))}
