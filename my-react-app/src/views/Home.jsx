@@ -32,8 +32,8 @@ function Home() {
             <div key={course.id}
                 className="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
               <Card
-                title="UI/UX Design"
-                text="Design stunning interfaces with Figma and Adobe XD from scratch."
+                title={course.name}
+                text={course.description}
                 page_source={course.id}
                 img_source="./images/card_image.png"
               />
