@@ -2,9 +2,9 @@
 
 ## ⚙️ **Tech Stack**
 
-- **React.js** (Frontend Framework)
+- **React.js, HTML, CSS** (Frontend Framework)
+- **Bootstrap** (Styling & Responsiveness)
 - **React Router DOM** (Routing)
-- **Bootstrap / Tailwind CSS** (Styling & Responsiveness)
 - **Local JSON / JS Objects** (Simulated backend data)
 
 ---
@@ -101,7 +101,7 @@ src/
 ### 1️⃣ **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/my-react-app.git
+git clone https://github.com/developer0311/Online-Learning-Platform
 ```
 
 ### 2️⃣ **Navigate to project folder**
@@ -135,3 +135,7 @@ Visit the link shown in the terminal (usually [http://localhost:5173](http://loc
 - ✅ README file (this one)
 
 ---
+
+## **🔗 Live Preview**
+
+Hosted on Vercel, click the link to visit the site [https://online-learning-platform-two-tau.vercel.app/](https://online-learning-platform-two-tau.vercel.app/)
