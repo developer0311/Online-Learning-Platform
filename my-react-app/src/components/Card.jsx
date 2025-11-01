@@ -6,7 +6,6 @@ function Card(props) {
     <Link
       to={`/courses/${props.page_source}`} // 👈 navigate to course details using id
       className="card text-decoration-none"
-      style={{ width: "18rem" }}
     >
       <div className="card-img p-2 d-flex justify-content-center align-items-center">
         <img

@@ -115,9 +115,6 @@ section {
   border-radius: 20px;
 }
 
-/* .courses {
-  gap: 2;
-} */
 
 .card{
   transition: all 0.3s ease-in-out;
@@ -133,6 +130,12 @@ section {
   border-radius: 10px;
 }
 
+
+/* ------------------ CARD ------------------ */
+
+.card{
+  width: 18rem;
+}
 
 /* ------------------ PROFILE ------------------ */
 
