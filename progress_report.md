@@ -28,3 +28,27 @@
 **Progress Summary:**
 
 - Completed the project with version 01.
+
+
+---
+
+
+## **Day 3 Progress Report**
+
+**Date:** `01/11/25`  
+**In Time:** `02:00 pm`  
+**Out Time:** `02:30 pm`  
+**Name:** `Diprati Das`
+
+**Progress Summary:**
+
+- Completed the project with version 01.
+- Updated the README.md.
+- Fixed bugs and designs.
+
+**GitHub Repo Link**   
+https://github.com/developer0311/Online-Learning-Platform   
+
+**Website Live Link**  
+ https://online-learning-platform-two-tau.vercel.app/
+
